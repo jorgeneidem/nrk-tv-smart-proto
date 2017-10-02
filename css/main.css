@@ -55,8 +55,7 @@ html {
     position: relative;
     width: 1280px;
     height: 720px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: scroll;
     background-image: url(../images/background-1080p-v2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,7 +138,7 @@ html {
 
 
 
-.group__small, .group__editorial, .group__posters {
+.group__small, .group__editorial, .group__portraits {
     margin: 0 0 16px 0;
 }
 
@@ -159,7 +158,7 @@ html {
     height: 340px;
 }   
 
-.thumbnail__small, .editorial__card, .poster {
+.thumbnail__small, .editorial__card, .portrait {
     display: inline-block;
     margin: 8px 12px 5px 12px;
     transition: all .1s ease-in-out;
@@ -175,13 +174,13 @@ html {
     height: 100%;
 }
 
-.thumbnail__small:first-child, .editorial__card:first-child, .poster:first-child {
+.thumbnail__small:first-child, .editorial__card:first-child, .portrait:first-child {
     margin-left: 63px;
 }
 
 .thumbnail__small img,
 .editorial__card img,
-.poster img {
+.portrait img {
     border-radius: 3px;
     display: block;
     margin-bottom: -15px;
@@ -195,8 +194,18 @@ html {
     width: 100%;
 }
 
-.poster img {
-    border-radius: 3px;
+.portrait {
+    width: 192px;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+}
+
+.group__content__wrapper span {
+    max-width: 100px;
+    white-space: pre-wrap;
 }
 
 /*
@@ -208,7 +217,6 @@ html {
 ^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^
 */
 
-
 .hero__button:hover,
 .hero__button:focus {
     background-color: rgba(0,185,242,0.9);
@@ -217,7 +225,7 @@ html {
 .nrk-button:hover,
 .nrk-button:focus,
 .thumbnail__small:focus,
-.poster:focus { 
+.portrait:focus { 
     transform: scale(1.13); 
     outline: 0; 
     border-color: transparent;                      
