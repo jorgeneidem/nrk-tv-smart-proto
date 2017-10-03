@@ -12,7 +12,6 @@ html {
     color: #f0f0f0;
 }
 
-
 .group__header > h2 {
     font-family: 'LFT Etica';  font-weight: 600;  font-style: normal;
     font-size: 21px;
@@ -20,24 +19,24 @@ html {
 }
 
 .thumbnail__small {
-    font-family: 'LFT Etica';  font-weight: 200;  font-style: normal;
-    font-size: 15px;
+    font-family: 'LFT Etica';  font-weight: 400;  font-style: normal;
+    font-size: 20px;
 }
 
-.topmenu__item__main {
+.topmenu__wrap div {
     font-family: 'LFT Etica';  font-weight: 600;  font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .hero__textarea h1 {
     font-family: 'LFT Etica';  font-weight: 700;  font-style: normal;
-    font-size: 42px;
+    font-size: 38px;
     line-height: 1.3;
 }
 
 .hero__textarea h2 {
     font-family: 'LFT Etica';  font-weight: 300;  font-style: normal;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
@@ -87,12 +86,22 @@ html {
     background-color: rgba(15,29,39,0.4)
 }
 
-.topmenu__content {
+.topmenu__wrap {
     margin: 0 63px 0 63px; 
+    display: flex; 
+    justify-content: space-between;
 }
 
-.topmenu__item {
-    padding: 28px 10px 32px 0px
+.topmenu__wrap div {
+    margin: 20px 60px 20px 0px;
+}
+
+.topmenu__wrap div:first-child {
+    margin-right: auto;
+}
+
+.topmenu__wrap .logo {
+    padding-top: 4px;
 }
 
 .align-left {
@@ -105,8 +114,16 @@ html {
 
 .hero {
     position: relative;
-    height: 340px;
-    margin-left: 63px;
+    height: 320px;
+    margin-left: 63px;    
+}
+
+.hero__textarea {
+    position: absolute;
+    width: 450px;
+    top: 48px;
+    left: 84px;
+    text-align: center;
 }
 
 .hero__textarea > .hero__button {
@@ -116,14 +133,6 @@ html {
     height: 60px;
     width: 130px;
     z-index: 2000;
-}
-
-.hero__textarea {
-    position: absolute;
-    width: 480px;
-    top: 50%;
-    transform: translate(0, -60%);
-    text-align: center;
 }
 
 .hero__textarea h1 {
@@ -136,46 +145,55 @@ html {
     padding: 10px 10px 0 10px;
 }
 
+.group__small {
+    height: 240px;
+}
 
+.group__medium {
+    height: 420px;
+}
 
-.group__small, .group__editorial, .group__portraits {
+.group__large {
+    height: 520px;
+}
+
+.group {
     margin: 0 0 16px 0;
 }
 
 .group__content__wrapper {
     padding-top: 8px;
     width: 100%;
-    overflow-y: auto;
+    height: 100%;
     overflow-x: scroll;
     white-space: nowrap;
 }
 
-.group__thumbnails-wrapper {
-    height: 170px;
-}
-
-.group__editorial-wrapper {
-    height: 340px;
-}   
-
-.thumbnail__small, .editorial__card, .portrait {
+.group__content__wrapper > div {
     display: inline-block;
     margin: 8px 12px 5px 12px;
     transition: all .1s ease-in-out;
 }
 
-.thumbnail__small {
-    width: 192px;
-    height: 107px;
-}
-
-.thumbnail__small img {
-    width: 100%;
-    height: 100%;
-}
-
-.thumbnail__small:first-child, .editorial__card:first-child, .portrait:first-child {
+.group__content__wrapper > div:first-child {
     margin-left: 63px;
+}
+
+.thumbnail__small {
+    width: 240px;
+    height: 135px;
+}
+
+.thumbnail__category {
+    width: 192px;
+    height: 134px;
+}
+
+
+.thumbnail__small img,
+.thumbnail__category img {
+    width: 100%;
+    height: 100%;       
 }
 
 .thumbnail__small img,
@@ -183,11 +201,11 @@ html {
 .portrait img {
     border-radius: 3px;
     display: block;
-    margin-bottom: -15px;
+    margin-bottom: -25px;
 }
 
 .editorial__card {
-    width: 335px;
+    width: 508px;
 }
 
 .editorial__card img {
@@ -195,7 +213,7 @@ html {
 }
 
 .portrait {
-    width: 192px;
+    width: 240px;
 }
 
 .portrait img {
@@ -228,9 +246,9 @@ html {
 .portrait:focus { 
     transform: scale(1.13); 
     outline: 0; 
-    border-color: transparent;                      
+    border-color: transparent;
     box-shadow: 0 6px 28px 1px #000000;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;                
 }
 
 .editorial__card:focus { 
