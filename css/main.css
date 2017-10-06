@@ -16,39 +16,31 @@ html {
 }
 
 .hero__button {
-    font-family: 'LFT Etica';  font-weight: 400;  font-style: normal;
+    font-weight: 400;
     font-size: 18px;
 }
 
-.group__header > h2 {
-    font-family: 'LFT Etica';  font-weight: 600;  font-style: normal;
+.h2 {
+    font-weight: 600;
     font-size: 22px;
     margin: 0 0 -6px 63px;
 }
 
-.thumbnail__small {
-    font-family: 'LFT Etica';  font-weight: 400;  font-style: normal;
-    font-size: 20px;
-}
-
-.thumbnail__category span {
-    font-family: 'LFT Etica';  font-weight: 400;  font-style: normal;
-    font-size: 20px;
-}
-
-.topmenu__wrap div {
-    font-family: 'LFT Etica';  font-weight: 600;  font-style: normal;
-    font-size: 20px;
+.h3 {
+    font-weight: 800;
+    font-size: 25px;
+    margin: 0;
+    line-height: 1.25;
 }
 
 .hero__textarea h1 {
-    font-family: 'LFT Etica';  font-weight: 700;  font-style: normal;
+    font-weight: 700;
     font-size: 38px;
     line-height: 1.3;
 }
 
 .hero__textarea h2 {
-    font-family: 'LFT Etica';  font-weight: 300;  font-style: normal;
+    font-weight: 300;
     font-size: 22px;
 }
 
@@ -63,15 +55,33 @@ html {
 ^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^
 */
 
+* {
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a, button {
+    transition: .1s;
+}
+
+body {
+    background: #666;
+}
+
 .wrapper {
     position: relative;
     width: 1280px;
     height: 720px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-image: url(../images/background-1080p-v2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
+    -webkit-overflow-scrolling: auto;
+    -ms-overflow-style: none;
+    user-select: none;
 }
 
 .wrapper::-webkit-scrollbar {
@@ -81,13 +91,6 @@ html {
 .heroholder {
     position: absolute;
     right: 0;
-    z-index: 0;
-    /*
-    background-image: url(../images/hero-homo.jpg);
-    background-size: 938px;
-    background-position: top right;
-    background-repeat: no-repeat;
-    */
 }
 
 .heroholder img {
@@ -99,40 +102,46 @@ html {
 }
 
 .topmenu {
-    background-color: rgba(15,29,39,0.4);
+    text-align: right;
     position: relative;
     z-index: 1000;
+    background-color: rgba(15,29,39,0.4);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 63px;
+    margin: 0 0 10px;
 }
 
-.topmenu__wrap {
-    margin: 0 63px 0 63px; 
-    display: flex; 
-    justify-content: space-between;
+.topmenu__logo {
+    float: left;
+    padding: 4px 0;
 }
 
-.topmenu__wrap div {
-    margin: 20px 60px 20px 0px;
+.topmenu__logo:hover,
+.topmenu__logo:focus {
+    color:  rgba(0,185,242,0.9); 
 }
 
-.topmenu__wrap div:first-child {
-    margin-right: auto;
+.topmenu__item {
+    display: inline-block;
+    padding-left: 60px;
 }
 
-.topmenu__wrap div:last-child {
-    margin-right: 0;
-}
+.topmenu__item:focus,
+.topmenu__item:hover {
+    color:  rgba(0,185,242,0.9);
+    transform: scale(1.13); 
 
-.topmenu__wrap .logo {
-    padding-top: 4px;
 }
 
 .align-left {
     text-align: left
-  }
+}
 
-  .align-right {
+.align-right {
     text-align: right
-  }
+}
 
 .hero {
     position: relative;
@@ -166,156 +175,110 @@ html {
     padding: 10px 10px 0 10px;
 }
 
-.group {
-    margin: 0 0 8px 0;
+.hero__button:focus,
+.hero__button:hover {
+    background-color: rgba(0,185,242,0.9); 
+    transform: scale(1.1); 
+    border-color: transparent;
+    box-shadow: none;
 }
 
-.group__content__wrapper {
-    padding: 8px 0 42px 0;
+.scrollrow {
+    margin-top: -20px;
+    padding: 28px 63px 28px 0;
     width: 100%;
-    height: 100%;
+    text-indent: 51px; 
     overflow-x: scroll;
     overflow-y: visible;
     -webkit-overflow-scrolling: auto;
+    -ms-overflow-style: none;
     white-space: nowrap;
     user-select: none;
     position: relative;
 }
 
-.group__content__wrapper::-webkit-scrollbar {
+.scrollrow::-webkit-scrollbar {
     display: none;
    }
 
-.group__content__wrapper > div {
+.scrollrow > * {
     display: inline-block;
-    margin: 8px 12px 5px 12px;
-    transition: all .1s ease-in-out;
+    text-indent: 0;
 }
 
-.group__content__wrapper > div:first-child {
-    margin-left: 63px;
-}
-
-.group__content__wrapper img {
-    width: 100%;
-    height: 100%;       
-    border-radius: 3px;
-    display: block;
-    margin-bottom: -25px;
-}
-
-.thumbnail__small {
-    width: 262px;
-    height: 147px;
-}
-
-.thumbnail__category {
-    width: 204px;
-    height: 143px;
+.plug {
     position: relative;
+    margin: 8px 12px 5px 12px;
 }
 
-.thumbnail__category span {
+.plug:focus,
+.plug:hover { 
+    transform: scale(1.1); 
+}
+
+.plug img {
+    width: 100%;       
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+.plug:focus img,
+.plug:hover img {
+    box-shadow: 2px 2px 30px 1px rgba(0, 0, 0, .9);
+}
+
+.plug--small {
+    width: 262px;
+    font-size: 20px;
+}
+
+.plug--category {
+    font-size: 20px;
+    width: 166px;
+}
+
+.plug--category span {
     position: absolute;
-    top: 54px;
-    left: 10%;
-    text-align: center;
+    top:48%;
+    transform: translateY(-52%);
+    left: 15px;
+    right: 10px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-.editorial__card__medium {
+.plug--category.selected * {
+    opacity: .3;
+}
+
+.plug--card--medium {
     width: 358px;
-    height: 307px;
+    /* min-height: 320px; */
+    background: #000;
+    border-radius: 0 0 4px 4px;
 }
 
-.editorial__card__large {
+.plug--card--large {
     width: 545px;
+    background: #000;
 }
 
-.portrait {
+.plug--card__textarea {
+    position: relative;
+    padding: 0 25px 80px;
+    max-width: 100%;
+    margin: -32px 0;    
+    font-size: 20px;
+    text-align: center;
+    hyphens: manual;
+    white-space: normal;    
+}
+
+.plug--portrait {
     width: 262px;
-    height: 394px;
 }
 
-.group__content__wrapper span {
-    max-width: 100px;
-    white-space: pre-wrap;
-}
+@keyframes fadeIn { from { opacity:0; } }
 
-a:link {
-    text-decoration: none;
-}
-
-/*
-^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^
-^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^
-^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚  A N I M A T I O N  &  E F F E C T S ˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^
-^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^
-^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^ 
-^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^˚˚^^
-*/
-
-.logo svg:focus,
-.logo svg:hover {
-    outline: 0;
-    border-color: transparent;
-    fill:  rgba(0,185,242,0.9);
-    transition: all .2s ease-in-out;   
-    transform: scale(1.13); 
-}
-
-.topmenu__item:focus,
-.topmenu__item:hover {
-    outline: 0;
-    border-color: transparent;
-    color:  rgba(0,185,242,0.9);
-    transition: all .2s ease-in-out;   
-    transform: scale(1.13); 
-    box-shadow: none;
-}
-
-.hero__button:focus,
-.hero__button:hover {
-    background-color: rgba(0,185,242,0.9);
-}
-
-.nrk-button:focus,
-.nrk-button:hover,
-.group__content__wrapper > div:focus,
-.group__content__wrapper > div:hover { 
-    transform: scale(1.1); 
-    outline: 0; 
-    border-color: transparent;
-    box-shadow: 0 6px 28px 1px #000000;
-    transition: all .2s ease-in-out;                
-}
-
-.editorial__card__medium:focus,
-.editorial__card__large:focus,
-div.portrait:focus,
-div.portrait:hover { 
-    transform: scale(1.06); 
-    outline: 0; 
-    border-color: transparent;                      
-    box-shadow: 0 6px 28px 10px #000000;
-    transition: all .2s ease-in-out;
-}
-
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fadein {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:.5s;
-  -moz-animation-duration:.5s;
-  animation-duration:.5s;
+.scrollrow > * {
+  animation: fadeIn ease-in .5s backwards;
 }

@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="css/main.css">
 
     </head>
-    <body class="nrk-color-invert">
+    <body>
 
         <!-- NRK icons -->
         <script async src="https://static.nrk.no/core-icons/latest/core-icons.min.js"></script>
@@ -30,77 +30,58 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div class="wrapper">
+        <div class="wrapper nrk-color-invert">
             
             <div class="topmenu">
-                <div class="topmenu__wrap">
-                    <div class="logo"><a href="index.html"><svg tabindex="0" width="5em" height="1.2em" aria-hidden="true"><use xlink:href="#nrk-logo-nrk-tv" /></svg></a></div>
-                    <div class="topmenu__item" tabindex="0">Kategorier</div>
-                    <div class="topmenu__item" tabindex="0">Direkte</div>
-                    <div class="topmenu__item" tabindex="0">Søk</div>
-                    <div class="topmenu__item" tabindex="0">Jørgen</div>
-                </div>
+                <a class="topmenu__logo" href="index.html">
+                    <span class="nrk-sr">NRK TV</span>
+                    <svg width="5em" height="1.2em" aria-hidden="true"><use xlink:href="#nrk-logo-nrk-tv" /></svg>
+                </a>
+                <a class="topmenu__item current" href="dokumentar.html">Kategorier</a>
+                <a class="topmenu__item" href="#">Direkte</a>
+                <a class="topmenu__item" href="#">Søk</a>
+                <a class="topmenu__item" href="#">Jørgen</a>
             </div>
-
-            <div class="group">
-                <div class="group__content__wrapper">
-                    <div class="thumbnail__category fadein" tabindex="0"><span>Dokumentar</span><img src="images/categories/category-1.png"></div>
-                    <div class="thumbnail__category fadein" tabindex="0"><span>Underholdning</span><img src="images/categories/category-2.png"></div>
-                    <div class="thumbnail__category fadein" tabindex="0"><span>Drama/serier</span><img src="images/categories/category-3.png"></div>
-                    <div class="thumbnail__category fadein" tabindex="0"><span>Livsstil</span><img src="images/categories/category-4.png"></div>
-                    <div class="thumbnail__category fadein" tabindex="0"><span>Humor</span><img src="images/categories/category-5.png"></div>
-                    <div class="thumbnail__category fadein" tabindex="0"><span>Film</span><img src="images/categories/category-6.png"></div>
-                </div>
-            </div>
-
-            <div class="group">
-                <div class="group__header">
-                    <h2>Anbefalt</h2>
-                </div>
-                <div class="group__content__wrapper">
-                    <div class="editorial__card__medium fadein" tabindex="0"><img src="images/editorial/editorial2.png"></div>
-                    <div class="editorial__card__medium fadein" tabindex="0"><img src="images/editorial/editorial3.png"></div>
-                    <div class="editorial__card__medium fadein" tabindex="0"><img src="images/editorial/editorial4.png"></div>
-                    <div class="editorial__card__medium fadein" tabindex="0"><img src="images/editorial/editorial1.png"></div>
-                    <div class="editorial__card__medium fadein" tabindex="0"><img src="images/editorial/editorial1.png"></div>
-                </div>
-            </div>
-
-            <div class="group">
-                <div class="group__header">
-                    <h2>Mer</h2>
-                </div>
-                <div class="group__content__wrapper">
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-1.jpg"><br><span>Der ingen skulle tru at…</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-2.jpg"><br><span>Angela Merkel</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-3.jpg"><br><span>Kijasow</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-4.jpg"><br><span>Fenolap</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-5.jpg"><br><span>Tanicpi</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-6.jpg"><br><span>Jicalzoh</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-7.jpg"><br><span>Febico</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-8.jpg"><br><span>Ibusorit</span></div>    
-                </div>
-            </div>
-
-            <div class="group">
-                <div class="group__header">
-                    <h2>Mest sett</h2>
-                </div>
-                <div class="group__content__wrapper">
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-12.jpg"><br><span>Trump den utrolige</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-13.jpg"><br><span>Dokusommer: Vinduaget</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-14.jpg"><br><span>The Yellow Trip</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-15.jpg"><br><span>Joel Montgomery</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-16.jpg"><br><span>Derek Boydi</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-17.jpg"><br><span>Kom skal vi danse!</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-18.jpg"><br><span>Inez Cohen</span></div>
-                    <div class="thumbnail__small fadein" tabindex="0"><img src="images/plugimages/plugimg-19.jpg"><br><span>Mae Coxit</span></div>    
-                </div>
+        
+            <div class="scrollrow">
+                <a href="#" class="plug plug--category current"><span>Dokumentar</span><img src="images/categories/category-1.png"></a>
+                <a href="#" class="plug plug--category"><span>Underholdning</span><img src="images/categories/category-2.png"></a>
+                <a href="#" class="plug plug--category"><span>Drama/serier</span><img src="images/categories/category-3.png"></a>
+                <a href="#" class="plug plug--category"><span>Livsstil</span><img src="images/categories/category-4.png"></a>
+                <a href="#" class="plug plug--category"><span>Humor</span><img src="images/categories/category-5.png"></a>
+                <a href="#" class="plug plug--category"><span>Film</span><img src="images/categories/category-6.png"></a>
+                <a href="#" class="plug plug--category"><span>Natur</span><img src="images/categories/category-7.png"></a>
+                <a href="#" class="plug plug--category"><span>Vitenskap</span><img src="images/categories/category-8.png"></a>
             </div>
             
-            
-            <br><br>
+            <h2 class="h2">
+                Anbefalt
+            </h2>
+            <div class="scrollrow">
+                <!-- &shy; hvis du vil dele et ord -->
+                <a href="#" class="plug plug--card--medium"><img src="images/editorial/takinova.jpg"><div class="plug--card__textarea">Takin Ova<h3 class="h3">Historien om norsk hiphop</h3></div></a>
+                <a href="#" class="plug plug--card--medium"><img src="images/editorial/danmark.jpg"><div class="plug--card__textarea">Historien om Danmark<h3 class="h3">Storslått om<br>Danmark</h3></div></a>
+                <a href="#" class="plug plug--card--medium"><img src="images/editorial/dooley.jpg"><div class="plug--card__textarea">Stacey - jenter jager IS<h3 class="h3">–Vi skal til fronten og drepe 1000 IS-soldater</h3></div></a>
+                <a href="#" class="plug plug--card--medium"><img src="images/editorial/leather.jpg"><div class="plug--card__textarea">Kva er ein psykopat?<h3 class="h3">Blant englands mest beryktede psykopater</h3></div></a>
+                <a href="#" class="plug plug--card--medium"><img src="images/editorial/psyko.jpg"><div class="plug--card__textarea">Kva er ein psykopat?<h3 class="h3">Blant englands mest beryktede psykopater</h3></div></a>
+            </div>
+    
+        
+            <h2 class="h2">
+                Mer 
+            </h2>
+            <div class="scrollrow">
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-1.jpg">Der ingen skulle tru at…</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-2.jpg">Angela Merkel</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-3.jpg">Kijasow</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-4.jpg">Fenolap</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-5.jpg">Tanicpi</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-6.jpg">Jicalzoh</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-7.jpg">Febico</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-8.jpg">Ibusorit</a>
+            </div>
         
         </div>
+        <script src="spatial.js"></script>
     </body>
 </html>
