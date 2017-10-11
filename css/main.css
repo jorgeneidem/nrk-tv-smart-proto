@@ -33,6 +33,22 @@ html {
     line-height: 1.25;
 }
 
+.h3--fallback {
+    font-weight: 800;
+    font-size: 19px;
+    margin: 0;
+    line-height: 1.25;
+}
+
+.h4 {
+    font-weight: 400;
+    font-size: 17px;
+    color: #ccc;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .hero__textarea h1 {
     font-weight: 700;
     font-size: 38px;
@@ -197,7 +213,7 @@ body {
 
 .scrollrow {
     margin-top: -20px;
-    padding: 28px 63px 28px 0;
+    padding: 28px 63px 38px 0;
     width: 100%;
     text-indent: 51px; 
     overflow-x: scroll;
@@ -218,9 +234,16 @@ body {
     text-indent: 0;
 }
 
+.scrollrow a {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+
 .plug {
     position: relative;
     margin: 8px 12px 5px 12px;
+    font-size: 19px;
 }
 
 .plug:focus,
@@ -241,7 +264,11 @@ body {
 
 .plug--small {
     width: 262px;
-    font-size: 20px;
+    font-size: 19px;
+}
+
+.plug--fallback {
+    width: 358px;
 }
 
 .plug--series {
@@ -249,7 +276,7 @@ body {
 }
 
 .plug--category {
-    font-size: 20px;
+    font-size: 19px;
     width: 166px;
 }
 
@@ -283,7 +310,7 @@ body {
     padding: 0 25px 80px;
     max-width: 100%;
     margin: -32px 0;    
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     hyphens: manual;
     white-space: normal;    
