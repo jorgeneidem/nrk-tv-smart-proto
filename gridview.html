@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>NRK Smart-TV prototype</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- NRK css and fonts -->
+        <link rel="stylesheet" href="https://static.nrk.no/core-css/latest/core-css.min.css">
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Book.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Semibold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Bold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Extrabold.woff2" as="font" type="font/woff2" crossorigin>
+
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+
+        <!-- NRK icons -->
+        <script async src="https://static.nrk.no/core-icons/latest/core-icons.min.js"></script>
+        
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Include jQuery from somewhere, must use version 1.8 or above -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include latest jquery.scrollTo, can download from https://github.com/flesler/jquery.scrollTo/releases -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+       
+
+        <div class="wrapper nrk-color-invert">
+            
+            <div class="topmenu transparent-bg">    
+                <a class="topmenu__back-nav" href="index.html">
+                    Tilbake til Forsiden
+                </a>
+                <a class="topmenu__item topmenu__item--username" href="#">
+                        <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.7-1.28-6-3.22.03-2 4-3.08 6-3.08s5.97 1.1 6 3.08c-1.3 1.94-3.5 3.22-6 3.22z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                        Jørgen
+                </a>
+            </div>
+
+            <h1 class="h1_pageheader">Favoritter</h1>
+            
+            <div class="nrk-grid nrk-xs-12of12 gridview">
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-1.jpg">Der ingen skulle tru at…<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-2.jpg">Angela Merke<h4 class="h4">Tysk dokumentar. Hun er…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-3.jpg">Kijasow<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-4.jpg">Fenolap<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-5.jpg">Tanicpi<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-6.jpg">Jicalzoh</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-7.jpg">Febico<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-8.jpg">Ibusorit</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-9.jpg">Tanicpi</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-10.jpg">Jicalzoh<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-11.jpg">Febico<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-12.jpg">Ibusorit</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-13.jpg">Tanicpi<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-14.jpg">Jicalzoh</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-15.jpg">Febico</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-16.jpg">Ibusorit</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-1.jpg">Der ingen skulle tru at…<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-2.jpg">Angela Merke<h4 class="h4">Tysk dokumentar. Hun er…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-3.jpg">Kijasow<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-4.jpg">Fenolap<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-5.jpg">Tanicpi<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-6.jpg">Jicalzoh<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-7.jpg">Febico<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-8.jpg">Ibusorit<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-9.jpg">Tanicpi<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-10.jpg">Jicalzoh<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-11.jpg">Febico<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-12.jpg">Ibusorit<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-13.jpg">Tanicpi<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-14.jpg">Jicalzoh<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-15.jpg">Febico<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-16.jpg">Ibusorit<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+            </div>
+
+        </div>
+        <script src="spatial.js"></script>
+        <script>
+            $('.gridview a[href^="#"]').focus(function(e) {
+            // Prevent the jump and the #hash from appearing on the address bar
+            e.preventDefault();
+            // Scroll to focused element, with offset
+            //$(this).parent().stop(true).scrollTo(this, {duration:300, interrupt:true, offset:-80});
+            // Scroll the focused element close to top of window 
+            $(this).parent().parent().stop(true).scrollTo(this, 400, {offset: {top:-60, left:-80}});
+          });
+          $('.topmenu a[href^="#"]').focus(function(e) {
+            // Prevent the jump and the #hash from appearing on the address bar
+            e.preventDefault();
+            // Scroll to focused element, with offset
+            //$(this).parent().stop(true).scrollTo(this, {duration:300, interrupt:true, offset:-80});
+            // Scroll the focused element close to top of window 
+            $(this).parent().parent().stop(true).scrollTo(this, 400, {offset: {top:0, left:0}});
+          });
+          </script>
+    </body>
+</html>

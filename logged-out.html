@@ -13,12 +13,11 @@
 
         <!-- NRK css and fonts -->
         <link rel="stylesheet" href="https://static.nrk.no/core-css/latest/core-css.min.css">
-        <link rel="stylesheet" href="https://static.nrk.no/core-fonts/latest/core-fonts.min.css">
-        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Book.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Semibold.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Bold.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Extrabold.woff2" as="font" type="font/woff2" crossorigin>
-        
+
         <link rel="stylesheet" href="css/main.css">
 
     </head>
@@ -38,57 +37,53 @@
 
         <div class="wrapper nrk-color-invert">
             
+            <div class="heroholder">
+                <img src="images/editorial/vietnam.jpg" width="938px" class="masketest">
+            </div> 
+            
             <div class="topmenu">
-                <a class="topmenu__logo" href="index.html">
+                <a class="topmenu__logo" href="#">
                     <span class="nrk-sr">NRK TV</span>
                     <svg width="5em" height="1.2em" aria-hidden="true"><use xlink:href="#nrk-logo-nrk-tv" /></svg>
                 </a>
-                <a class="topmenu__item" href="categories-gridview.html">Kategorier</a>
+                <!-- <a class="topmenu__item" href="dokumentar.html">Kategorier</a> -->
                 <a class="topmenu__item" href="#">Direkte</a>
                 <a class="topmenu__item" href="#">Søk</a>
-                <a class="topmenu__item topmenu__item--username" href="logged-out.html">
+                <a class="topmenu__item topmenu__item--username" href="index.html">
                         <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.7-1.28-6-3.22.03-2 4-3.08 6-3.08s5.97 1.1 6 3.08c-1.3 1.94-3.5 3.22-6 3.22z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-                        Jørgen
+                        Logg inn
                 </a>
-            </div>        
-            <div class="herorow"> 
-                <a href="#" class="plug plug--inlinehero plug--inlinehero--single">
-                    <div>
-                        <div class="inlinehero-text-area">
-                            <h2>Valkyrien</h2>
-                            <h1>Annerledes og overraskende krim som du bør sjekke ut</h1>
-                        </div>
-                    </div>
-                    <div class="imageholder"></div>
-                    &nbsp;</a>
             </div>
 
-            <h2 class="h2">
-                Fortsett å se
-            </h2>
-            <div class="scrollrow scrollrow--small scrollrow--first">
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-1.jpg">This is the program title<h4 class="h4">This is the description for this…</h4></a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-2.jpg">Skavlan - Fredag 6. oktober<h4 class="h4">This is the description for this…</h4></a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-3.jpg">Brennpunkt: Norske tilstander<h4 class="h4">Tøyenløftet har til nå kostet 140 mi…</h4></a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-4.jpg">Helene sjekker inn: Alkohol…<h4 class="h4">Programleder Helene Sandvig…</h4></a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-5.jpg">This is the program title <h4 class="h4">This is the description for this…</h4></a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-6.jpg">This is the program title <h4 class="h4">This is the description for this…</h4></a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-7.jpg">This is the program title <h4 class="h4">This is the description for this…</h4></a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-8.jpg">This is the program title <h4 class="h4">This is the description for this…</h4></a>
-                <a href="gridview.html" class="plug plug--small group-entry group-entry--small"><span>Mer</span><svg width="30" height="30" aria-hidden="true"><use xlink:href="#nrk-arrow-right-long" /></svg></a>
+            <div class="legend">
+                <h2>Click one element to give it focus,<br>
+                    then navigate with arrow keys</h2> 
+                <img src="images/arrow_keys.png" width="160px">
+                <h3>Or use the tab-button.</h3>
+                <button class="nrk-button nrk-color-invert hero__button" style="font-weight:600" autofocus> START </button>
             </div>
         
+            <div class="hero">                
+                <div class="hero__textarea">
+                    <h2>Vietnam</h2>
+                    <h1>Slik har du aldri hørt historien fortalt før</h1>
+                    <h4 class="h4">Amerikansk dokumentarserie.</h4>
+                    <button class="nrk-button nrk-color-invert hero__button">Se nå</button>
+                </div>
+            </div> 
+            
+            <div class="fastforward"><svg width="30" height="30" aria-hidden="true"><use xlink:href="#nrk-media-ffw" /></svg></div>
         
             <h2 class="h2">
-                Favoritter
+                Aktuelt
             </h2>
-            <div class="scrollrow scrollrow--medium">
-                <a href="#" class="plug plug--medium"><img src="images/editorial/takinova-fallback.jpg">Program title <h3 class="h3--fallback">Plug title</h3></a>
-                <a href="#" class="plug plug--medium"><img src="images/plugimages/plugimg-13.jpg">Program title<h4 class="h4">If there is no plugtitle, this is description</h4></a>
-                <a href="#" class="plug plug--medium"><img src="images/editorial/danmark-fallback.jpg">Historien om Danmark <h3 class="h3--fallback">Storslått dansk historiefortelling</h3></a>
-                <a href="#" class="plug plug--medium"><img src="images/editorial/dooley-fallback.jpg">Stacey - jenter jager IS<h3 class="h3--fallback">–Vi skal til fronten og drepe 1000 IS&#8209;soldater</h3></a>
-                <a href="#" class="plug plug--medium"><img src="images/editorial/leather-fallback.jpg">Jævla homo<h3 class="h3--fallback">–Er det greit å være homo i 2017?</h3></a>
-                <a href="#" class="plug plug--medium"><img src="images/editorial/psyko-fallback.jpg">Kva er ein psykopat?<h3 class="h3--fallback">Blant englands mest beryktede psykopater</h3></a>
+            <div class="scrollrow scrollrow--small scrollrow--aktuelt">
+                <a href="#" class="plug plug--small"><img src="images/editorial/takinova-fallback.jpg">Program title <h4 class="h4">Description or episode number</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-13.jpg">Program title<h4 class="h4">Description or episode number</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/editorial/danmark-fallback.jpg">Historien om Danmark <h4 class="h4">Description or episode number</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/editorial/dooley-fallback.jpg">Stacey - jenter jager IS<h4 class="h4">Description or episode number</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/editorial/leather-fallback.jpg">Jævla homo<h4 class="h4">Description or episode number</h4></a>
+                <a href="#" class="plug plug--small"><img src="images/editorial/psyko-fallback.jpg">Kva er ein psykopat?<h4 class="h4">Description or episode number</h4></a>
                 <a href="gridview.html" class="plug plug--small group-entry group-entry--small"><span>Mer</span><svg width="30" height="30" aria-hidden="true"><use xlink:href="#nrk-arrow-right-long" /></svg></a>
             </div>
         
@@ -119,36 +114,24 @@
                 <a href="#" class="plug plug--portrait"><img src="images/portrait/film-3.png">&nbsp;</a>
                 <a href="#" class="plug plug--portrait"><img src="images/portrait/film-4.png">&nbsp;</a>
             </div>
- 
-            <div class="noscrollrow"> 
-                <a href="#" class="plug plug--inlinehero plug--inlinehero--top plug--inlinehero--single">
-                    <div>
-                        <div class="inlinehero-text-area">
-                            <h2>Valkyrien</h2>
-                            <h1>Annerledes og overraskende krim som du bør sjekke ut</h1>
-                        </div>
-                    </div>
-                    <div class="imageholder"></div>
-                    &nbsp;</a>
-            </div>
 
             <h2 class="h2">
-                Gode serier
-            </h2>
-            <div class="scrollrow scrollrow--medium">
-                <a href="#" class="plug plug--medium"><img src="images/dramaseries/series-1.png">&nbsp;</a>
-                <a href="#" class="plug plug--medium"><img src="images/dramaseries/series-4.png">&nbsp;</a>
-                <a href="#" class="plug plug--medium"><img src="images/dramaseries/series-2.png">&nbsp;</a>
-                <a href="#" class="plug plug--medium"><img src="images/dramaseries/series-5.png">&nbsp;</a>
-                <a href="#" class="plug plug--medium"><img src="images/dramaseries/series-3.png">&nbsp;</a>
-            </div>
+                    Gode serier
+                </h2>
+                <div class="scrollrow scrollrow--medium">
+                    <a href="#" class="plug plug--series"><img src="images/dramaseries/series-1.png">&nbsp;</a>
+                    <a href="#" class="plug plug--series"><img src="images/dramaseries/series-4.png">&nbsp;</a>
+                    <a href="#" class="plug plug--series"><img src="images/dramaseries/series-2.png">&nbsp;</a>
+                    <a href="#" class="plug plug--series"><img src="images/dramaseries/series-5.png">&nbsp;</a>
+                    <a href="#" class="plug plug--series"><img src="images/dramaseries/series-3.png">&nbsp;</a>
+                </div>
 
         
-            <h2 class="h2" id="utforsk">
-                Kategorier
+            <h2 class="h2">
+                Utforsk
             </h2>
             <div class="scrollrow scrollrow--category">
-                <a href="dokumentar-shelves.html" class="plug plug--category"><span>Dokumentar</span><img src="images/categories/category-1.png">&nbsp;</a>
+                <a href="dokumentar.html" class="plug plug--category"><span>Dokumentar</span><img src="images/categories/category-1.png">&nbsp;</a>
                 <a href="#" class="plug plug--category"><span>Underholdning</span><img src="images/categories/category-2.png">&nbsp;</a>
                 <a href="#" class="plug plug--category"><span>Drama/serier</span><img src="images/categories/category-3.png">&nbsp;</a>
                 <a href="#" class="plug plug--category"><span>Livsstil</span><img src="images/categories/category-4.png">&nbsp;</a>

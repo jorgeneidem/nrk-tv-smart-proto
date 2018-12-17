@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>NRK Smart-TV display contracts</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- NRK css and fonts -->
+        <link rel="stylesheet" href="https://static.nrk.no/core-css/latest/core-css.min.css">
+        <link rel="stylesheet" href="https://static.nrk.no/core-fonts/latest/core-fonts.min.css">
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Semibold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Bold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Extrabold.woff2" as="font" type="font/woff2" crossorigin>
+        
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+
+        <!-- NRK icons -->
+        <script async src="https://static.nrk.no/core-icons/latest/core-icons.min.js"></script>
+
+        <!-- Include jQuery from somewhere, must use version 1.8 or above -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include latest jquery.scrollTo, can download from https://github.com/flesler/jquery.scrollTo/releases -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+        
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <div class="wrapper nrk-color-invert">
+            
+            <div class="topmenu transparent-bg">
+                <a class="topmenu__logo" href="index.html">
+                    <span class="nrk-sr">NRK TV</span>
+                    <svg width="5em" height="1.2em" aria-hidden="true"><use xlink:href="#nrk-logo-nrk-tv" /></svg>
+                </a>
+                &nbsp;
+            </div>
+
+            <div class="herorow"> 
+                <a href="#" class="plug plug--inlinehero plug--inlinehero--single">
+                    <div>
+                        <div class="inlinehero-text-area">
+                            <h2>contentTitle</h2>
+                            <h1>This is the plugTitle of the hero</h1>
+                        </div>
+                    </div>
+                    <div class="imageholder"></div>
+                    &nbsp;</a>
+            </div>
+
+            <h2 class="h2">
+                Simple
+            </h2>
+            <div class="scrollrow scrollrow--medium">
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-12.jpg">contentTitle</a>
+                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-11.jpg">contentTitle</a>
+            </div>
+
+            <h2 class="h2">
+                Fallback
+            </h2>
+            <div class="scrollrow scrollrow--medium">
+                <a href="#" class="plug plug--medium"><img src="images/editorial/takinova-fallback.jpg">contentTitle<h3 class="h3--fallback">plugTitle</h3></a>
+                <a href="#" class="plug plug--medium"><img src="images/plugimages/plugimg-13.jpg">contentTitle<h4 class="h4">description</h4></a>
+            </div>
+        
+        
+            <h2 class="h2">
+                Editorial
+            </h2>
+            <div class="scrollrow scrollrow--large">
+                <a href="#" class="plug plug--card--large"><img src="images/editorial/vietnam.jpg"><div class="plug--card__textarea">contentTitle<h3 class="h3">plugTitle plugTitle plugTitle plugTitle plugTitle </h3><h4 class="h4">description description description description description description description.</h4></div></a>
+                <a href="#" class="plug plug--card--large"><img src="images/editorial/danmark.jpg"><div class="plug--card__textarea">contentTitle<h3 class="h3">plugTitle plugTitle plugTitle plugTitle plugTitle </h3><h4 class="h4">description description description description description description description.</h4></div></a>
+            </div>
+
+        
+            <h2 class="h2">
+                PortraitLogo
+            </h2>
+            <div class="scrollrow scrollrow--portrait">
+                <a href="#" class="plug plug--portrait"><img src="images/portrait/film-1.png">&nbsp;</a>
+            </div>
+
+            <h2 class="h2">
+                Portrait
+            </h2>
+            <div class="scrollrow scrollrow--portrait">
+                <a href="#" class="plug plug--portrait"><img src="images/portrait/film-6.png">&nbsp;contentTitle</a>
+            </div>
+
+
+            <div class="noscrollrow"> 
+                <a href="#" class="plug plug--inlinehero plug--inlinehero--top plug--inlinehero--single">
+                    <div>
+                        <div class="inlinehero-text-area">
+                            <h2>Inline hero</h2>
+                            <h1>This is the plugTitle of an inline hero</h1>
+                        </div>
+                    </div>
+                    <div class="imageholder"></div>
+                    &nbsp;</a>
+            </div>
+
+
+            <h2 class="h2">
+                LandscapeLogo
+            </h2>
+            <div class="scrollrow scrollrow--medium">
+                <a href="#" class="plug plug--medium"><img src="images/dramaseries/series-1.png">&nbsp;</a>
+            </div>
+
+            <h2 class="h2">
+                Landscape
+            </h2>
+            <div class="scrollrow scrollrow--medium">
+                <a href="#" class="plug plug--medium"><img src="images/dramaseries/series-1.png">contentTitle</a>
+            </div>
+
+        </div>
+        <script src="spatial.js"></script>
+        <script src="scrollto-je.js"></script>
+        
+    </body>
+</html>
+
+

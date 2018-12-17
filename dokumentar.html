@@ -26,25 +26,30 @@
         <!-- NRK icons -->
         <script async src="https://static.nrk.no/core-icons/latest/core-icons.min.js"></script>
         
+        <!-- Include jQuery from somewhere, must use version 1.8 or above -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include latest jquery.scrollTo, can download from https://github.com/flesler/jquery.scrollTo/releases -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
         <div class="wrapper nrk-color-invert">
             
-            <div class="topmenu">
-                <a class="topmenu__logo" href="index.html">
-                    <span class="nrk-sr">NRK TV</span>
-                    <svg width="5em" height="1.2em" aria-hidden="true"><use xlink:href="#nrk-logo-nrk-tv" /></svg>
-                </a>
-                <a class="topmenu__item current" href="dokumentar.html">Kategorier</a>
-                <a class="topmenu__item" href="#">Direkte</a>
-                <a class="topmenu__item" href="#">Søk</a>
-                <a class="topmenu__item" href="#">Jørgen</a>
-            </div>
-
-            <br>
+                <div class="topmenu transparent-bg">    
+                    <a class="topmenu__back-nav" href="index.html#utforsk">
+                        Tilbake til *prev*
+                    </a>
+                    <a class="topmenu__item topmenu__item--username" href="#">
+                        <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.7-1.28-6-3.22.03-2 4-3.08 6-3.08s5.97 1.1 6 3.08c-1.3 1.94-3.5 3.22-6 3.22z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                        Jørgen
+                    </a>
+                </div>
         
+                    <h1 class="h1_pageheader">Dokumentar</h1>
+
+            <!--
             <div class="scrollrow">
                 <a href="#" class="plug plug--category current"><span>Dokumentar</span><img src="images/categories/category-1.png">&nbsp;</a>
                 <a href="#" class="plug plug--category"><span>Underholdning</span><img src="images/categories/category-2.png">&nbsp;</a>
@@ -55,35 +60,45 @@
                 <a href="#" class="plug plug--category"><span>Natur</span><img src="images/categories/category-7.png">&nbsp;</a>
                 <a href="#" class="plug plug--category"><span>Vitenskap</span><img src="images/categories/category-8.png">&nbsp;</a>
             </div>
+            --> 
             
-            <h2 class="h2">
-                Anbefalt
-            </h2>
-            <div class="scrollrow">
-                <!-- &shy; hvis du vil dele et ord -->
-                <a href="#" class="plug plug--card--medium"><img src="images/editorial/takinova.jpg"><div class="plug--card__textarea">Takin Ova<h3 class="h3">Historien om norsk hiphop</h3></div></a>
-                <a href="#" class="plug plug--card--medium"><img src="images/editorial/danmark.jpg"><div class="plug--card__textarea">Historien om Danmark<h3 class="h3">Storslått om<br>Danmark</h3></div></a>
-                <a href="#" class="plug plug--card--medium"><img src="images/editorial/dooley.jpg"><div class="plug--card__textarea">Stacey - jenter jager IS<h3 class="h3">–Vi skal til fronten og drepe 1000 IS-soldater</h3></div></a>
-                <a href="#" class="plug plug--card--medium"><img src="images/editorial/leather.jpg"><div class="plug--card__textarea">Kva er ein psykopat?<h3 class="h3">Blant englands mest beryktede psykopater</h3></div></a>
-                <a href="#" class="plug plug--card--medium"><img src="images/editorial/psyko.jpg"><div class="plug--card__textarea">Kva er ein psykopat?<h3 class="h3">Blant englands mest beryktede psykopater</h3></div></a>
-            </div>
-    
-        
-            <h2 class="h2">
-                Mer 
-            </h2>
-            <div class="scrollrow">
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-1.jpg">Der ingen skulle tru at…</a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-2.jpg">Angela Merkel</a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-3.jpg">Kijasow</a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-4.jpg">Fenolap</a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-5.jpg">Tanicpi</a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-6.jpg">Jicalzoh</a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-7.jpg">Febico</a>
-                <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-8.jpg">Ibusorit</a>
-            </div>
+            <div class="nrk-grid nrk-xs-12of12 gridview">
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-1.jpg">Der ingen skulle tru at…<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-2.jpg">Angela Merke<h4 class="h4">Tysk dokumentar. Hun er…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-3.jpg">Kijasow<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-4.jpg">Fenolap<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-5.jpg">Tanicpi<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-6.jpg">Jicalzoh</a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-7.jpg">Febico<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-8.jpg">Ibusorit</a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-9.jpg">Tanicpi</a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-10.jpg">Jicalzoh<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-11.jpg">Febico<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-12.jpg">Ibusorit</a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-13.jpg">Tanicpi<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-14.jpg">Jicalzoh</a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-15.jpg">Febico</a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-16.jpg">Ibusorit</a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-1.jpg">Der ingen skulle tru at…<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-2.jpg">Angela Merke<h4 class="h4">Tysk dokumentar. Hun er…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-3.jpg">Kijasow<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-4.jpg">Fenolap<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-5.jpg">Tanicpi<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-6.jpg">Jicalzoh<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-7.jpg">Febico<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-8.jpg">Ibusorit<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-9.jpg">Tanicpi<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-10.jpg">Jicalzoh<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-11.jpg">Febico<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-12.jpg">Ibusorit<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-13.jpg">Tanicpi<h4 class="h4">Norsk dokumentarserie om…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-14.jpg">Jicalzoh<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-15.jpg">Febico<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                    <a href="#" class="plug plug--small"><img src="images/plugimages/plugimg-16.jpg">Ibusorit<h4 class="h4">Finsk-portugisisk kortfilm fra…</h4></a>
+                </div>
         
         </div>
         <script src="spatial.js"></script>
+        <script src="scrollto-je.js"></script>
     </body>
 </html>

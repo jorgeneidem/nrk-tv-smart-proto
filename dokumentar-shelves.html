@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>NRK Smart-TV prototype</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- NRK css and fonts -->
+        <link rel="stylesheet" href="https://static.nrk.no/core-css/latest/core-css.min.css">
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Book.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Semibold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Bold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://static.nrk.no/core-fonts/latest/LFT_Etica_Extrabold.woff2" as="font" type="font/woff2" crossorigin>
+
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+
+        <!-- NRK icons -->
+        <script async src="https://static.nrk.no/core-icons/latest/core-icons.min.js"></script>
+        
+        <!-- Include jQuery from somewhere, must use version 1.8 or above -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include latest jquery.scrollTo, can download from https://github.com/flesler/jquery.scrollTo/releases -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <div class="wrapper nrk-color-invert">
+            
+                <div class="topmenu transparent-bg">    
+                    <a class="topmenu__back-nav" href="index.html#utforsk">
+                        Tilbake til *prev*
+                    </a>
+                    <a class="topmenu__item topmenu__item--username" href="#">
+                        <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.7-1.28-6-3.22.03-2 4-3.08 6-3.08s5.97 1.1 6 3.08c-1.3 1.94-3.5 3.22-6 3.22z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                        Jørgen
+                    </a>
+                </div>
+        
+                    <h1 class="h1_pageheader">Dokumentar</h1>
+
+            <!--
+            <div class="scrollrow">
+                <a href="#" class="plug plug--category current"><span>Dokumentar</span><img src="images/categories/category-1.png">&nbsp;</a>
+                <a href="#" class="plug plug--category"><span>Underholdning</span><img src="images/categories/category-2.png">&nbsp;</a>
+                <a href="#" class="plug plug--category"><span>Drama/serier</span><img src="images/categories/category-3.png">&nbsp;</a>
+                <a href="#" class="plug plug--category"><span>Livsstil</span><img src="images/categories/category-4.png">&nbsp;</a>
+                <a href="#" class="plug plug--category"><span>Humor</span><img src="images/categories/category-5.png">&nbsp;</a>
+                <a href="#" class="plug plug--category"><span>Film</span><img src="images/categories/category-6.png">&nbsp;</a>
+                <a href="#" class="plug plug--category"><span>Natur</span><img src="images/categories/category-7.png">&nbsp;</a>
+                <a href="#" class="plug plug--category"><span>Vitenskap</span><img src="images/categories/category-8.png">&nbsp;</a>
+            </div>
+            --> 
+            <br>
+            <h2 class="h2">
+                One shelf
+            </h2>
+            <div class="scrollrow scrollrow--large">
+                <a href="#" class="plug plug--card--large"><img src="images/editorial/vietnam.jpg"><div class="plug--card__textarea">Vietnam<h3 class="h3">Vietnamkrigen slik den aldri har blitt fortalt før</h3><h4 class="h4">Amerikansk dokumentarserie fra 2017. Over 10 episoder fortelles historien om Vietnamkrigen slik du aldri har hørt den før.</h4></div></a>
+                <a href="#" class="plug plug--card--large"><img src="images/editorial/danmark.jpg"><div class="plug--card__textarea">Historien om Danmark<h3 class="h3">Storslått dansk historiefortelling</h3><h4 class="h4">Dansk dokumentarserie fra 2017. For 12 000 år siden kom de første menneskene til det som i dag er Danmark.</h4></div></a>
+                <a href="#" class="plug plug--card--large"><img src="images/editorial/takinova.jpg"><div class="plug--card__textarea">Takin Ova - Historien om norsk hiphop<h3 class="h3">Plutselig skulle hele Norge breakdance i gatene</h3><h4 class="h4">Norsk musikkserie fra 2017. I 1984 har filmen Beat Street premiere og en hiphop-bølge skyller over landet. </h4></div></a>
+                <a href="#" class="plug plug--card--large"><img src="images/editorial/dooley.jpg"><div class="plug--card__textarea">Stacey - jenter jager IS<h3 class="h3">–Vi skal til fronten og drepe 1000 IS&#8209;soldater</h3><h4 class="h4">Britisk dokumentar fra 2017. Jesidiske kvinner vil ha hevn over IS. De har drept deres kjære og misbrukt deres søstre.</h4></div></a>
+                <a href="#" class="plug plug--card--large"><img src="images/editorial/leather.jpg"><div class="plug--card__textarea">Jævla homo<h3 class="h3">–Er det greit å være homo i 2017?</h3><h4 class="h4">Amerikansk dokumentarserie fra 2017. Over 10 episoder fortelles historien om Vietnamkrigen slik du aldri har hørt den før.</h4></div></a>
+                <a href="#" class="plug plug--card--large"><img src="images/editorial/psyko.jpg"><div class="plug--card__textarea">Kva er ein psykopat?<h3 class="h3">Blant englands mest beryktede psykopater</h3><h4 class="h4">Amerikansk dokumentarserie fra 2017. Over 10 episoder fortelles historien om Vietnamkrigen slik du aldri har hørt den før.</h4></div></a>
+            </div>
+
+            <h2 class="h2">
+                Another shelf
+            </h2>
+            <div class="scrollrow scrollrow--medium">
+                <a href="#" class="plug plug--medium"><img src="images/editorial/takinova-fallback.jpg">Program title <h3 class="h3--fallback">Plug title</h3></a>
+                <a href="#" class="plug plug--medium"><img src="images/plugimages/plugimg-13.jpg">Program title<h4 class="h4">If there is no plugtitle, this is description</h4></a>
+                <a href="#" class="plug plug--medium"><img src="images/editorial/danmark-fallback.jpg">Historien om Danmark <h3 class="h3--fallback">Storslått dansk historiefortelling</h3></a>
+                <a href="#" class="plug plug--medium"><img src="images/editorial/dooley-fallback.jpg">Stacey - jenter jager IS<h3 class="h3--fallback">–Vi skal til fronten og drepe 1000 IS&#8209;soldater</h3></a>
+                <a href="#" class="plug plug--medium"><img src="images/editorial/leather-fallback.jpg">Jævla homo<h3 class="h3--fallback">–Er det greit å være homo i 2017?</h3></a>
+                <a href="#" class="plug plug--medium"><img src="images/editorial/psyko-fallback.jpg">Kva er ein psykopat?<h3 class="h3--fallback">Blant englands mest beryktede psykopater</h3></a>
+                <a href="gridview.html" class="plug plug--small group-entry group-entry--small"><span>Mer</span><svg width="30" height="30" aria-hidden="true"><use xlink:href="#nrk-arrow-right-long" /></svg></a>
+            </div>
+        
+
+        
+        </div>
+        <script src="spatial.js"></script>
+        <script src="scrollto-je.js"></script>
+    </body>
+</html>
